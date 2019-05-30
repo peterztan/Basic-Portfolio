@@ -1,11 +1,11 @@
 header {
-    margin: 0 auto;
+    width: 100%;
     padding: 14px 16px;
     overflow: hidden;
     background-color: white;
     position: relative;
-    content: 960px;
     box-flex: 1;
+    border: 2px solid #777777;
 }
 
 h1 {
@@ -28,6 +28,7 @@ li {
 
 .nav {
     list-style-type: none;
+    box-align: center;
 }
 
 li a {
@@ -44,14 +45,15 @@ li a:hover {
 }
 
 li a.about, a.port {
-    border-right: 1px solid #777777;
+    border-right: 1px solid lightgray;
 }
 
 .container {
     width: 960px;
     margin: 0 auto;
     background-color: #ffffff;
-    border: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
 }
 
 p {
@@ -63,15 +65,15 @@ p {
     width: 200px;
     height: 200px;
     margin-right: 20px;
+    float: left;
 }
 
 footer {
-    margin: 0 auto;
     padding: 14px 16px;
-    overflow: hidden;
     font-weight: bold;
     color: #777777;
     background-color: white;
+    bottom: 0;
     position: fixed;
-    box-flex: 1;
+    width: 100%;
 }
