@@ -1,32 +1,77 @@
-header {
+nav {
+    display: block;
+    width: 100%;
+}
+
+nav#masthead {
+
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: #777777;
+}
+
+.navbar {
     top: 0;
+    position: fixed;
+    min-height: 70px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    margin-bottom: 20px;
+    overflow: visible;
+}
+
+nav .container-fluid {
     max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-fluid {
     padding-right: 20px;
     padding-left: 20px;
-    overflow: hidden;
-    background-color: white;
-    position: fixed;
-    border: 2px solid #777777;
+}
+
+.container-fluid::after, .container-fluid::before {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+}
+
+.navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 5px;
+}
+
+section.name {
+    display: block;
+    margin-top: 5px;
 }
 
 h1 {
-    float: left;
     display: inline-block;
+    text-align: center;
     font-weight: bold;
-    background-color: teal;
+    font-family: 'Georgia', Georgia, 'Times New Roman', Times, serif;
     color: #ffffff;
-    margin: 0 auto;
-    padding: 20px 20px;
+    background-color: teal;
 }
 
 li {
     float: right;
 }
 
-ul::after {
+section#nav::before, section#nav::after {
     content: "";
     clear: both;
     display: table;
+}
+
+ul {
+    float: right;
     list-style-type: none;
 }
 
@@ -52,7 +97,7 @@ li a.about, a.port {
 .container {
     background-color: #ffffff;
     position: relative;
-    width: 960px;
+    max-width: 960px;
     padding: 15px 20px;
 }
 
