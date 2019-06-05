@@ -58,6 +58,21 @@
         
         <footer>
             <h3>Copyright © 2019</h3>
-        </footer>
+        </footer>       
     </body>
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("masthead");
+
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 </html>
