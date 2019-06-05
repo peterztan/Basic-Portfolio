@@ -1,6 +1,6 @@
 nav {
     display: block;
-    position: relative;
+    position: fixed;
     width: 100%;
 }
 
@@ -10,7 +10,7 @@ nav {
 
 .navbar {
     top: 0;
-    position: relative;
+    position: fixed;
     min-height: 70px;
     border-bottom: 3px solid #cccccc;
     margin-bottom: 20px;
